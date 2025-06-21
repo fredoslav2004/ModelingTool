@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: 14px/1.4 system-ui;
+}
+html,
+body {
+  height: 100%;
+  background: #f9f9f9;
+  color: #333;
+}
+#stage {
+  display: block;
+  width: 100%;
+  height: calc(100% - 40px);
+  background: #ffffff;
+  cursor: default;
+}
+#toolbar {
+  height: 40px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0 0.75rem;
+  background: #eaeaea;
+  border-top: 1px solid #d0d0d0;
+}
+#toolbar button {
+  all: unset;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#toolbar button.active,
+#toolbar button:hover {
+  background: #ddd;
+}
+#status {
+  margin-left: auto;
+  opacity: 0.8;
+  font-size: 0.75rem;
+}
